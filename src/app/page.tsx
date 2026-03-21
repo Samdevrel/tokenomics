@@ -120,7 +120,7 @@ export default function Home() {
           </div>
           <div className="bg-gray-900 border-4 border-gray-700 p-4 text-center">
             <div className="text-sm text-gray-400">Total Supply</div>
-            <div className="text-2xl font-black">{(selectedToken?.totalSupply / 1000000).toFixed(0)}M</div>
+            <div className="text-2xl font-black">{((selectedToken?.totalSupply || 0) / 1000000).toFixed(0)}M</div>
           </div>
         </section>
 
